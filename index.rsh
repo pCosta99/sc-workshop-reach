@@ -14,7 +14,6 @@ forall(UInt, handAlice =>
     assert(isOutcome(winner(handAlice, handBob)))));
 
 const Player = {
-  // Fun([Typeof Arg1, Typeof Arg2], Typeof Return)
   ...hasRandom,
   getHand: Fun([], UInt),
   seeOutcome: Fun([UInt], Null)
