@@ -1,7 +1,6 @@
 'reach 0.1';
 
 const Player = {
-  // Fun([Typeof Arg1, Typeof Arg2], Typeof Return)
   getHand: Fun([], UInt),
   seeOutcome: Fun([UInt], Null)
 };
