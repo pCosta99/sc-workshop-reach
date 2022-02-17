@@ -11,13 +11,11 @@ const ctcBob = accBob.contract(backend, ctcAlice.getInfo());
 const HAND = ['Rock', 'Paper', 'Scissor'];
 const OUTCOME = ['Bob wins', 'Draw', 'Alice wins'];
 const Player = (Who) => ({
-  // function getHand(uint hand) public
   getHand: () => {
     const hand = Math.floor(Math.random() * 3);
     console.log(`${Who} played ${HAND[hand]}`);
     return hand;
   },
-  // function seeOutcome() external view returns(uint)
   seeOutcome: (outcome) => {
     console.log(`${Who} saw outcome ${OUTCOME[outcome]}`)
   }
